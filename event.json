@@ -14,19 +14,21 @@
     },
     "datetime": {
         "date": "2026-09-25",
-        "startTime": "2:00 PM",
-        "endTime": "8:00 PM",
+        "wedstartTime": "2:00 PM",
+        "wedendTime": "3:00 PM",
+        "recepstartTime": "4:00 PM",
+        "recependTime": "8:00 PM",
         "timezone": "local",
         "allDay": false
     },
     "location": {
-        "name": "Denver Botanic Gardens / ESP Hifi Listening Bar",
-        "address": "1007 York St, Denver, CO 80206",
-        "mapsLink": "https://maps.app.goo.gl/qd3JDujzPEtY5zwGA"
+        "weddingname": "Denver Botanic Gardens / ESP Hifi Listening Bar",
+        "weddingaddress": "1007 York St, Denver, CO 80206",
+        "weddingmapsLink": "https://maps.app.goo.gl/qd3JDujzPEtY5zwGA"
         
-        "name": "ESP Hifi Listening Bar",
-        "address": "1029 Santa Fe Dr, Denver, CO 80204",
-        "mapsLink": "https://maps.app.goo.gl/u1kTh9wqhzGtNKibA"
+        "recepname": "ESP Hifi Listening Bar",
+        "recepaddress": "1029 Santa Fe Dr, Denver, CO 80204",
+        "recepmapsLink": "https://maps.app.goo.gl/u1kTh9wqhzGtNKibA"
     },
     "schedule": [
         {
