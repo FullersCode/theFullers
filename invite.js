@@ -326,7 +326,6 @@ fetch(EVENT_JSON_URL)
             const templateLink = document.getElementById("footer-template-link");
             if (templateLink) {
                 templateLink.href = credits.templateLink || "#";
-                templateLink.textContent = credits.templateAuthor || "";
             }
 
             const repoContainer = document.getElementById("footer-repo-container");
