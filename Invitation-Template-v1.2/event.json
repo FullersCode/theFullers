@@ -20,9 +20,14 @@
         "allDay": false
     },
     "location": {
-        "name": "Denver Botanic Gardens / ESP Hifi Listening Bar",
+        "name": "Denver Botanic Gardens",
         "address": "1007 York St, Denver, CO 80206",
         "mapsLink": "https://maps.app.goo.gl/qd3JDujzPEtY5zwGA"
+
+    "location": {
+        "name": "ESP Hifi Listening Bar",
+        "address": "1029 Santa Fe Dr, Denver, CO 80204",
+        "mapsLink": "https://maps.app.goo.gl/wPeXuKAWKxyc6nqW6"
     },
     "schedule": [
         {
