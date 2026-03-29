@@ -19,10 +19,10 @@
         "timezone": "local",
         "allDay": false
     },
-    "location": { 
+    "location": {
         "name": "Denver Botanic Gardens",
         "address": "1007 York St, Denver, CO 80206",
-        "mapsLink": "https://maps.app.goo.gl/qd3JDujzPEtY5zwGA"
+        "mapsLink": "https://maps.app.goo.gl/WVHUNCo1NQytHb7HA"
     },
 
     "schedule": [
