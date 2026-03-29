@@ -1,0 +1,79 @@
+{
+    "_meta_comment": "TEMPLATE CONFIGURATION",
+    "meta": {
+        "version": "1.1",
+        "private": false,
+        "simpleMode": false,
+        "showSimpleModeToggle": false,
+        "countdown": true
+    },
+    "event": {
+        "title": "YOUR_EVENT_TITLE_HERE",
+        "subtitle": "YOUR_EVENT_SUBTITLE_HERE",
+        "description": "YOUR_EVENT_DESCRIPTION_HERE"
+    },
+    "datetime": {
+        "date": "YYYY-MM-DD",
+        "startTime": "HH:MM AM/PM"
+    },
+    "location": {
+        "name": "YOUR_VENUE_NAME_HERE",
+        "address": "YOUR_VENUE_ADDRESS_HERE",
+        "mapsLink": "VENUE_GOOGLE_MAPS_LINK_HERE"
+    },
+    "schedule": [
+        {
+            "time": "HH:MM AM/PM",
+            "label": "Activity 1 Description"
+        },
+        {
+            "time": "HH:MM AM/PM",
+            "label": "Activity 2 Description"
+        }
+    ],
+    "rsvp": {
+        "enabled": true,
+        "url": "YOUR_FORM_URL_HERE"
+    },
+    "calendar": {
+        "enabled": true,
+        "providers": {
+            "google": true
+        }
+    },
+    "design": {
+        "accentColor": "#22c55e",
+        "heroImages": [
+            "HERO_IMAGE_URL_1",
+            "HERO_IMAGE_URL_2"
+        ],
+        "sectionBackgrounds": [
+            "SECTION_BG_IMAGE_URL_1",
+            "SECTION_BG_IMAGE_URL_2"
+        ]
+    },
+    "music": {
+        "enabled": true,
+        "loop": true,
+        "volume": 0.3,
+        "audioUrl": "YOUR_AUDIO_URL_HERE"
+    },
+    "footer": {
+        "text": "",
+        "branding": {
+            "link": "https://rainier-ps.github.io/Personal-Website/",
+            "logoUrl": "https://raw.githubusercontent.com/Rainier-PS/Personal-Website/main/images/site/Rainier%20Logo-Primary.svg",
+            "logoAlt": "Logo"
+        },
+        "credits": {
+            "designByLabel": "Created & Designed by",
+            "copyrightYear": "2026",
+            "authorName": "AUTHOR_NAME_HERE",
+            "templateLabel": "Template by",
+            "templateAuthor": "Rainier Pearson Saputra",
+            "templateLink": "https://rainier-ps.github.io/Personal-Website/",
+            "repoLabel": "",
+            "repoLink": ""
+        }
+    }
+}
