@@ -42,23 +42,15 @@ const Details = () => {
               <div className="space-y-10">
                 <div className="relative flex items-center md:justify-between">
                   <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
-                  
                   <div className="ml-12 md:ml-0 md:w-5/12 md:pr-8 md:text-right">
                     <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
-                      <h3 className="text-xl font-semibold text-black mb-2">
-                        {/* CUSTOMIZE: Event name */}
-                        Ceremony
-                      </h3>
-                      <div className="flex items-center justify-end gap-2 mb-3 text-black">
+                      <h3 className="text-xl font-semibold text-black mb-2">Ceremony</h3>
+                      <div className="flex items-center md:justify-end gap-2 mb-3 text-black">
                         <Calendar className="w-4 h-4" />
-                        <span className="font-medium">
-                          {/* CUSTOMIZE: Time */}
-                          6:00 PM - 6:30 PM
-                        </span>
+                        <span className="font-medium">2:00 PM - 3:00 PM</span>
                       </div>
                       <p className="text-black">
-                        {/* CUSTOMIZE: Description */}
-                        We will be getting married under the sun in the Texas heat (fans will be provided).
+                        We will be getting married at the "Romantic Gardens" at the Denver Botanic Gardens. We assume the ceremony will take 30 minutes with 30 minutes to take photos.
                       </p>
                     </div>
                   </div>
@@ -66,23 +58,15 @@ const Details = () => {
 
                 <div className="relative flex items-center md:justify-between">
                   <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
-                  
                   <div className="ml-12 md:ml-auto md:w-5/12 md:pl-8 md:text-left">
                     <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
-                      <h3 className="text-xl font-semibold text-black mb-2">
-                        {/* CUSTOMIZE: Event name */}
-                        Cocktail Hour
-                      </h3>
+                      <h3 className="text-xl font-semibold text-black mb-2">Cocktail Hour</h3>
                       <div className="flex items-center gap-2 mb-3 text-black">
                         <Calendar className="w-4 h-4" />
-                        <span className="font-medium">
-                          {/* CUSTOMIZE: Time */}
-                          6:30 PM - 7:30 PM
-                        </span>
+                        <span className="font-medium">4:00 PM - 5:00 PM</span>
                       </div>
                       <p className="text-black">
-                        {/* CUSTOMIZE: Description */}
-                        Enjoy drinks and appetizers while we take photos & say hello to everyone.
+                        Head over to ESP Hifi Denver to enjoy some drinks and appetizers!
                       </p>
                     </div>
                   </div>
@@ -90,23 +74,15 @@ const Details = () => {
 
                 <div className="relative flex items-center md:justify-between">
                   <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
-                  
                   <div className="ml-12 md:ml-0 md:w-5/12 md:pr-8 md:text-right">
                     <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
-                      <h3 className="text-xl font-semibold text-black mb-2">
-                        {/* CUSTOMIZE: Event name */}
-                        Introduction of Newlyweds
-                      </h3>
-                      <div className="flex items-center justify-end gap-2 mb-3 text-black">
+                      <h3 className="text-xl font-semibold text-black mb-2">Dinner</h3>
+                      <div className="flex items-center md:justify-end gap-2 mb-3 text-black">
                         <Calendar className="w-4 h-4" />
-                        <span className="font-medium">
-                          {/* CUSTOMIZE: Time */}
-                          7:30 PM - 7:40 PM
-                        </span>
+                        <span className="font-medium">5:00 PM - 6:00 PM</span>
                       </div>
                       <p className="text-black">
-                        {/* CUSTOMIZE: Description */}
-                        Our wedding party will be introduced, followed by our first appearance as a married couple.
+                        Enjoy some wood fired pizza and salad!
                       </p>
                     </div>
                   </div>
@@ -114,23 +90,15 @@ const Details = () => {
 
                 <div className="relative flex items-center md:justify-between">
                   <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
-                  
                   <div className="ml-12 md:ml-auto md:w-5/12 md:pl-8 md:text-left">
                     <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
-                      <h3 className="text-xl font-semibold text-black mb-2">
-                        {/* CUSTOMIZE: Event name */}
-                        Dinner
-                      </h3>
+                      <h3 className="text-xl font-semibold text-black mb-2">Speeches &amp; Dances</h3>
                       <div className="flex items-center gap-2 mb-3 text-black">
                         <Calendar className="w-4 h-4" />
-                        <span className="font-medium">
-                          {/* CUSTOMIZE: Time */}
-                          7:45 PM - 8:30 PM
-                        </span>
+                        <span className="font-medium">6:00 PM - 7:00 PM</span>
                       </div>
                       <p className="text-black">
-                        {/* CUSTOMIZE: Description */}
-                        A plated dinner will be served to all guests. During dinner, there will be a few speeches from both the groom and the bride's side.
+                        We will share some speeches and a few dances!
                       </p>
                     </div>
                   </div>
@@ -138,47 +106,15 @@ const Details = () => {
 
                 <div className="relative flex items-center md:justify-between">
                   <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
-                  
                   <div className="ml-12 md:ml-0 md:w-5/12 md:pr-8 md:text-right">
                     <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
-                      <h3 className="text-xl font-semibold text-black mb-2">
-                        {/* CUSTOMIZE: Event name */}
-                        First Dance
-                      </h3>
-                      <div className="flex items-center justify-end gap-2 mb-3 text-black">
+                      <h3 className="text-xl font-semibold text-black mb-2">Enjoy the Party!</h3>
+                      <div className="flex items-center md:justify-end gap-2 mb-3 text-black">
                         <Calendar className="w-4 h-4" />
-                        <span className="font-medium">
-                          {/* CUSTOMIZE: Time */}
-                          8:30 PM
-                        </span>
+                        <span className="font-medium">7:00 PM - 8:00 PM</span>
                       </div>
                       <p className="text-black">
-                        {/* CUSTOMIZE: Description */}
-                        We will share our first dance as a married couple.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="relative flex items-center md:justify-between">
-                  <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
-                  
-                  <div className="ml-12 md:ml-auto md:w-5/12 md:pl-8 md:text-left">
-                    <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
-                      <h3 className="text-xl font-semibold text-black mb-2">
-                        {/* CUSTOMIZE: Event name */}
-                        Dancing until Dawn
-                      </h3>
-                      <div className="flex items-center gap-2 mb-3 text-black">
-                        <Calendar className="w-4 h-4" />
-                        <span className="font-medium">
-                          {/* CUSTOMIZE: Time */}
-                          8:30 PM - 11:00 PM
-                        </span>
-                      </div>
-                      <p className="text-black">
-                        {/* CUSTOMIZE: Description */}
-                        Dance the night away with us! We better see you out on the dance floor at all times, because this is a party!
+                        Dance and enjoy drinks and food!
                       </p>
                     </div>
                   </div>
@@ -201,10 +137,9 @@ const Details = () => {
           <div className="bg-white rounded-xl shadow-xl overflow-hidden border border-pale-yellow">
             <div className="md:flex">
               <div className="md:w-1/2 h-64 md:h-auto">
-                {/* CUSTOMIZE: Replace with your venue image */}
                 <img
-                  src="https://waltersweddingestates.com/wp-content/uploads/2021/12/5-walters-wedding-estates-our-venues-austin-and-san-antonio-collection-stonehaven-hall-at-the-milestone-new-braunfels-12-24-gallery-image-2.jpg"
-                  alt="Venue"
+                  src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=600&fit=crop&crop=center"
+                  alt="Denver Botanic Gardens"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -230,21 +165,13 @@ const Details = () => {
                   <div>
                     <p className="font-medium text-black">Parking Information:</p>
                     <p className="text-black">
-                      {/* CUSTOMIZE: Add parking details */}
-                      Self-parking available on gravel. Parking is in the first lot when you pull in to the venue on the right hand side.
+                      The Denver Botanic Gardens has plenty of garage parking across the street from the venue!
                     </p>
                   </div>
                 </div>
                 
-                <div className="mb-6">
-                  <p className="text-black">
-                    {/* CUSTOMIZE: Add venue description or additional information */}
-                    Our venue features stunning views of the beautiful indoor and outdoor spaces for the ceremony and reception.
-                  </p>
-                </div>
-                
-                <a 
-                  href="https://maps.app.goo.gl/q39QNSeiDzjKcAWSA" 
+                <a
+                  href="https://maps.app.goo.gl/2S2Rw29hJra9mt1n8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-black font-medium hover:text-pale-blue transition-colors"
