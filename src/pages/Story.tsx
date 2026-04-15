@@ -14,22 +14,22 @@ const Story = () => {
     {
       year: '2016', // Replace with actual year
       title: 'First time meeting each other',
-      description: 'The first time we ever met was on a soccer field during his sophomore year and her freshman year. They instantly knew nothing, other than Ethan telling his parents of this "cute freshman girl".', // Replace with your story
+      description: 'The first time we ever met was on a soccer field during his sophomore year and her freshman year. They instantly knew nothing, other than LinZi telling his parents of this "cute freshman girl".', // Replace with your story
     },
     {
       year: '2018', // Replace with actual year
       title: 'First Date',
-      description: 'After promising one of her best friends, Ethan decided to not take Marlena to prom this year, but still went and from there, started getting to know her and eventually asked her out to go to dinner and a movie on June 1, 2018. They ended up going to P.F. Changs and seeing Avengers: Infinity War.', // Replace with your story
+      description: 'After promising one of her best friends, LinZi decided to not take Caymen to prom this year, but still went and from there, started getting to know her and eventually asked her out to go to dinner and a movie on June 1, 2018. They ended up going to P.F. Changs and seeing Avengers: Infinity War.', // Replace with your story
     },
     {
       year: '2023 & 2024', // Replace with actual year
       title: 'Graduating College',
-      description: 'After meeting in high school, we both went to colleges in San Antonio where we grew our relationship.  Ethan graduated in 2023 from the University of Texas at San Antonio with a degree in Finance and Marlena graduated in 2024 from the University of Incarnate Word with a degree in Nursing.', // Replace with your story
+      description: 'After meeting in high school, we both went to colleges in San Antonio where we grew our relationship.  LinZi graduated in 2023 from the University of Texas at San Antonio with a degree in Finance and Caymen graduated in 2024 from the University of Incarnate Word with a degree in Nursing.', // Replace with your story
     },
     {
       year: '2024', // Replace with actual year
       title: 'The Proposal',
-      description: 'On October 12, 2024, after waiting for what was actually years, Ethan finally got down on one knee at Boerne Lake, where he asked Marlena to marry him and spend the rest of her life with him, to which she said yes.', // Replace with your story
+      description: 'On October 12, 2024, after waiting for what was actually years, LinZi finally got down on one knee at Boerne Lake, where he asked Caymen to marry him and spend the rest of her life with him, to which she said yes.', // Replace with your story
     },
   ];
 
@@ -98,7 +98,7 @@ const Story = () => {
             </h2>
             <p className="text-lg text-black max-w-2xl mx-auto">
               {/* CUSTOMIZE: Replace with your engagement photos description */}
-              Here are a few photos of the actual moment where Ethan proposed to Marlena, which
+              Here are a few photos of the actual moment where LinZi proposed to Caymen, which
               capture the beatiful moment shared together that marked the next step on our
               journey together through life.
             </p>

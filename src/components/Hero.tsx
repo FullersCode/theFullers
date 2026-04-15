@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light mb-6 tracking-wide">
             {/* CUSTOMIZE: Replace with couple's names */}
-            Ethan <span className="text-pale-blue">&</span> Marlena
+            LinZi <span className="text-pale-blue">&</span> Caymen
           </h1>
           <p className="text-xl md:text-2xl font-light mb-8 opacity-90">
             {/* CUSTOMIZE: Replace with your wedding tagline */}

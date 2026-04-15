@@ -49,7 +49,7 @@ const Index = () => {
           <div className="mb-6">
             <h3 className="text-2xl font-serif mb-2 text-black">
               {/* CUSTOMIZE: Replace with couple's names */}
-              Ethan & Marlena
+              LinZi & Caymen
             </h3>
             <p className="text-black">
               {/* CUSTOMIZE: Replace with your wedding date and location */}
