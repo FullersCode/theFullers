@@ -1,5 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Calendar, Clock, MapPin, Users } from 'lucide-react';
 
 const QuickDetails = () => {
@@ -65,6 +66,7 @@ const QuickDetails = () => {
       icon: Users,
       title: 'Dress Code',
       info: 'Formal (Tie optional)',
+      to: '/faq#dress-code',
     },
     {
       icon: Clock,
@@ -136,6 +138,19 @@ const QuickDetails = () => {
                     </div>
                   )}
                 </div>
+              );
+            }
+
+            if ('to' in detail && detail.to) {
+              return (
+                <Link
+                  key={index}
+                  to={detail.to}
+                  className={clickableTile + ' block'}
+                >
+                  <TileInner detail={detail} />
+                  <p className="text-xs text-sage-green mt-2 font-medium">View FAQ →</p>
+                </Link>
               );
             }
 

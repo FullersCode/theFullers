@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Story from "./pages/Story";
 import Details from "./pages/Details";
 import Gallery from "./pages/Gallery";
+import FAQ from "./pages/FAQ";
 import RSVP from "./pages/RSVP";
 import NotFound from "./pages/NotFound";
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/story" element={<Story />} />
           <Route path="/details" element={<Details />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path="/rsvp" element={<RSVP />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
