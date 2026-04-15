@@ -59,7 +59,7 @@ const Index = () => {
           <div className="border-t border-black pt-6">
             <p className="text-black text-sm">
               {/* CUSTOMIZE: Replace with your footer message */}
-              Made with ❤️ for our special day
+              Made with ❤️ by LinZi
             </p>
           </div>
         </div>
