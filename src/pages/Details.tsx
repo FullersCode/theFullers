@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import { MapPin, Clock, Car, Hotel, UtensilsCrossed, Gift, Music, Calendar } from 'lucide-react';
+import { MapPin, Clock, Car, Hotel, UtensilsCrossed, Music, Calendar, Heart, Wine, Sparkles } from 'lucide-react';
 
 const Details = () => {
   return (
@@ -33,93 +33,62 @@ const Details = () => {
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="relative">
-              {/* Timeline line */}
-              <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-1 bg-white h-full"></div>
-              
-              {/* Timeline items */}
-              <div className="space-y-10">
-                <div className="relative flex items-center md:justify-between">
-                  <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
-                  <div className="ml-12 md:ml-0 md:w-5/12 md:pr-8 md:text-right">
-                    <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
-                      <h3 className="text-xl font-semibold text-black mb-2">Ceremony</h3>
-                      <div className="flex items-center md:justify-end gap-2 mb-3 text-black">
-                        <Calendar className="w-4 h-4" />
-                        <span className="font-medium">2:00 PM - 3:00 PM</span>
-                      </div>
-                      <p className="text-black">
-                        We will be getting married at the "Romantic Gardens" at the Denver Botanic Gardens. We assume the ceremony will take 30 minutes with 30 minutes to take photos.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+          <div className="max-w-2xl mx-auto">
+            <div className="relative border-l-4 border-white ml-5 pl-8 space-y-8">
+              {[
+                {
+                  icon: Heart,
+                  title: 'Ceremony',
+                  time: '2:00 PM – 3:00 PM',
+                  description: 'We will be getting married at the "Romantic Gardens" at the Denver Botanic Gardens. We assume the ceremony will take 30 minutes with 30 minutes to take photos.',
+                },
+                {
+                  icon: Wine,
+                  title: 'Cocktail Hour',
+                  time: '4:00 PM – 5:00 PM',
+                  description: 'Head over to ESP Hifi Denver to enjoy some drinks and appetizers!',
+                },
+                {
+                  icon: UtensilsCrossed,
+                  title: 'Dinner',
+                  time: '5:00 PM – 6:00 PM',
+                  description: 'Enjoy some wood fired pizza and salad!',
+                },
+                {
+                  icon: Music,
+                  title: 'Speeches & Dances',
+                  time: '6:00 PM – 7:00 PM',
+                  description: 'We will share some speeches and a few dances!',
+                },
+                {
+                  icon: Sparkles,
+                  title: 'Enjoy the Party!',
+                  time: '7:00 PM – 8:00 PM',
+                  description: 'Dance and enjoy drinks and food!',
+                },
+              ].map((item, index) => (
+                <div key={index} className="relative">
+                  {/* Dot on the timeline */}
+                  <div className="absolute -left-[2.85rem] top-5 w-5 h-5 bg-white rounded-full border-4 border-pale-yellow shadow-md" />
 
-                <div className="relative flex items-center md:justify-between">
-                  <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
-                  <div className="ml-12 md:ml-auto md:w-5/12 md:pl-8 md:text-left">
-                    <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
-                      <h3 className="text-xl font-semibold text-black mb-2">Cocktail Hour</h3>
-                      <div className="flex items-center gap-2 mb-3 text-black">
-                        <Calendar className="w-4 h-4" />
-                        <span className="font-medium">4:00 PM - 5:00 PM</span>
+                  <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-pale-yellow hover:shadow-lg transition-shadow duration-300">
+                    {/* Card header */}
+                    <div className="bg-pale-yellow px-5 py-4 flex items-center gap-3">
+                      <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <item.icon className="w-5 h-5 text-black" />
                       </div>
-                      <p className="text-black">
-                        Head over to ESP Hifi Denver to enjoy some drinks and appetizers!
-                      </p>
+                      <div>
+                        <h3 className="font-semibold text-black text-lg leading-tight">{item.title}</h3>
+                        <p className="text-sm text-black/70 font-medium mt-0.5">{item.time}</p>
+                      </div>
+                    </div>
+                    {/* Card body */}
+                    <div className="px-5 py-4">
+                      <p className="text-black leading-relaxed">{item.description}</p>
                     </div>
                   </div>
                 </div>
-
-                <div className="relative flex items-center md:justify-between">
-                  <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
-                  <div className="ml-12 md:ml-0 md:w-5/12 md:pr-8 md:text-right">
-                    <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
-                      <h3 className="text-xl font-semibold text-black mb-2">Dinner</h3>
-                      <div className="flex items-center md:justify-end gap-2 mb-3 text-black">
-                        <Calendar className="w-4 h-4" />
-                        <span className="font-medium">5:00 PM - 6:00 PM</span>
-                      </div>
-                      <p className="text-black">
-                        Enjoy some wood fired pizza and salad!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="relative flex items-center md:justify-between">
-                  <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
-                  <div className="ml-12 md:ml-auto md:w-5/12 md:pl-8 md:text-left">
-                    <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
-                      <h3 className="text-xl font-semibold text-black mb-2">Speeches &amp; Dances</h3>
-                      <div className="flex items-center gap-2 mb-3 text-black">
-                        <Calendar className="w-4 h-4" />
-                        <span className="font-medium">6:00 PM - 7:00 PM</span>
-                      </div>
-                      <p className="text-black">
-                        We will share some speeches and a few dances!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="relative flex items-center md:justify-between">
-                  <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
-                  <div className="ml-12 md:ml-0 md:w-5/12 md:pr-8 md:text-right">
-                    <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
-                      <h3 className="text-xl font-semibold text-black mb-2">Enjoy the Party!</h3>
-                      <div className="flex items-center md:justify-end gap-2 mb-3 text-black">
-                        <Calendar className="w-4 h-4" />
-                        <span className="font-medium">7:00 PM - 8:00 PM</span>
-                      </div>
-                      <p className="text-black">
-                        Dance and enjoy drinks and food!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
