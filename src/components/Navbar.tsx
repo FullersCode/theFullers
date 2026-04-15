@@ -13,7 +13,7 @@ const Navbar = () => {
     { name: 'Wedding Details', path: '/details' },
     { name: 'Photo Gallery', path: '/gallery' },
     { name: 'Registry', path: '/registry' },
-    { name: 'RSVP', path: '/rsvp' },
+    { name: 'RSVP', path: 'https://tally.so/r/A7xMDl', external: true },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -31,22 +31,34 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className={`text-sm font-medium transition-colors duration-200 relative ${
-                  isActive(item.path)
-                    ? 'text-black'
-                    : 'text-black hover:text-black'
-                }`}
-              >
-                {item.name}
-                {isActive(item.path) && (
-                  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-pale-blue rounded-full" />
-                )}
-              </Link>
-            ))}
+            {navItems.map((item) =>
+              item.external ? (
+                <a
+                  key={item.name}
+                  href={item.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium transition-colors duration-200 text-black hover:text-black"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className={`text-sm font-medium transition-colors duration-200 relative ${
+                    isActive(item.path)
+                      ? 'text-black'
+                      : 'text-black hover:text-black'
+                  }`}
+                >
+                  {item.name}
+                  {isActive(item.path) && (
+                    <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-pale-blue rounded-full" />
+                  )}
+                </Link>
+              )
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -64,20 +76,33 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-pale-yellow">
             <div className="flex flex-col space-y-4">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`text-sm font-medium transition-colors duration-200 ${
-                    isActive(item.path)
-                      ? 'text-black'
-                      : 'text-black hover:text-black'
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navItems.map((item) =>
+                item.external ? (
+                  <a
+                    key={item.name}
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-sm font-medium transition-colors duration-200 text-black hover:text-black"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.path}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`text-sm font-medium transition-colors duration-200 ${
+                      isActive(item.path)
+                        ? 'text-black'
+                        : 'text-black hover:text-black'
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                )
+              )}
             </div>
           </div>
         )}
