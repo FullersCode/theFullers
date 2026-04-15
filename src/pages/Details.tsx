@@ -59,12 +59,14 @@ const Details = () => {
                   title: 'Speeches & Dances',
                   time: '6:00 PM – 7:00 PM',
                   description: 'We will share some speeches and a few dances!',
+                  headerClass: 'bg-sky-100',
                 },
                 {
                   icon: Sparkles,
                   title: 'Enjoy the Party!',
                   time: '7:00 PM – 8:00 PM',
                   description: 'Dance and enjoy drinks and food!',
+                  headerClass: 'bg-rose-100',
                 },
               ].map((item, index) => (
                 <div key={index} className="relative">
@@ -73,7 +75,7 @@ const Details = () => {
 
                   <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-pale-yellow hover:shadow-lg transition-shadow duration-300">
                     {/* Card header */}
-                    <div className="bg-pale-yellow px-5 py-4 flex items-center gap-3">
+                    <div className={`${'headerClass' in item ? item.headerClass : 'bg-pale-yellow'} px-5 py-4 flex items-center gap-3`}>
                       <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
                         <item.icon className="w-5 h-5 text-black" />
                       </div>
