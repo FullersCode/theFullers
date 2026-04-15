@@ -10,14 +10,8 @@ const faqs = [
     question: 'What is the dress code?',
     answer: (
       <>
-        <p className="mb-3">The dress code is <strong>Formal</strong> (tie optional).</p>
-        <p className="mb-3">We encourage guests to embrace the elegance of the occasion. Here are some guidelines:</p>
-        <ul className="list-disc list-inside space-y-1 text-black">
-          <li><strong>Women:</strong> Floor-length gowns, midi dresses, or elegant cocktail attire</li>
-          <li><strong>Men:</strong> Suit or tuxedo — ties are encouraged but optional</li>
-          <li>Please avoid wearing white, ivory, or cream out of respect for the bride</li>
-          <li>The ceremony is outdoors at Denver Botanic Gardens — keep comfortable footwear in mind!</li>
-        </ul>
+        <p className="mb-3">The dress code is <strong>Formal / Semi-Formal</strong>.</p>
+        <p>We don't have specific wedding colors — we'll be at Denver Botanic Gardens in late September, so dress in something nice, comfortable, and get a fit off!</p>
       </>
     ),
   },
