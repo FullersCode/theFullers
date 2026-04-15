@@ -21,6 +21,11 @@ const QuickDetails = () => {
       info: 'Denver Botanic Gardens',
     },
     {
+      icon: Users,
+      title: 'Dress Code',
+      info: 'Formal (Tie optional)',
+    },
+    {
       icon: Clock,
       title: 'Reception Time',
       info: '4:00 PM',
@@ -29,11 +34,6 @@ const QuickDetails = () => {
       icon: MapPin,
       title: 'Reception Venue',
       info: 'ESP Hifi Denver',
-    },
-    {
-      icon: Users,
-      title: 'Dress Code',
-      info: 'Formal (Tie optional)',
     },
   ];
 
