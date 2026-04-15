@@ -33,12 +33,6 @@ const Index = () => {
             >
               RSVP Now
             </a>
-            <a
-              href="/story"
-              className="bg-transparent border-2 border-black text-black hover:bg-white px-8 py-3 rounded-full font-medium transition-all duration-200 hover:scale-105 transform"
-            >
-              Read Our Story
-            </a>
           </div>
         </div>
       </div>

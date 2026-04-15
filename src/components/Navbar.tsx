@@ -9,7 +9,6 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Our Story', path: '/story' },
     { name: 'Wedding Details', path: '/details' },
     { name: 'Photo Gallery', path: '/gallery' },
     { name: 'FAQ', path: '/faq' },
