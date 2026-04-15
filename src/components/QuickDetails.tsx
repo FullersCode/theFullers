@@ -13,17 +13,27 @@ const QuickDetails = () => {
     {
       icon: Clock,
       title: 'Ceremony Time',
-      info: '6:30', // CUSTOMIZE: Replace with your ceremony time
+      info: '2:00 PM',
     },
     {
       icon: MapPin,
-      title: 'Venue',
-      info: 'Denver Botanic Gardens', // CUSTOMIZE: Replace with your venue name and location
+      title: 'Ceremony Venue',
+      info: 'Denver Botanic Gardens',
+    },
+    {
+      icon: Clock,
+      title: 'Reception Time',
+      info: '4:00 PM',
+    },
+    {
+      icon: MapPin,
+      title: 'Reception Venue',
+      info: 'ESP Hifi Denver',
     },
     {
       icon: Users,
       title: 'Dress Code',
-      info: 'Formal (Tie optional)', // CUSTOMIZE: Replace with your dress code
+      info: 'Formal (Tie optional)',
     },
   ];
 
@@ -40,7 +50,7 @@ const QuickDetails = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {details.map((detail, index) => (
             <div
               key={index}
