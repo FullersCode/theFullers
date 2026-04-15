@@ -8,7 +8,7 @@ const QuickDetails = () => {
     {
       icon: Calendar,
       title: 'Wedding Date',
-      info: 'June 6, 2026', // CUSTOMIZE: Replace with your wedding date
+      info: 'September 26, 2026', // CUSTOMIZE: Replace with your wedding date
     },
     {
       icon: Clock,
@@ -18,7 +18,7 @@ const QuickDetails = () => {
     {
       icon: MapPin,
       title: 'Venue',
-      info: 'Stonehaven at the Milestone in New Braunfels, TX', // CUSTOMIZE: Replace with your venue name and location
+      info: 'Denver Botanic Gardens', // CUSTOMIZE: Replace with your venue name and location
     },
     {
       icon: Users,

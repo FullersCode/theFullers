@@ -211,7 +211,7 @@ const Details = () => {
               <div className="p-8 md:w-1/2">
                 <h3 className="text-2xl font-semibold text-black mb-4">
                   {/* CUSTOMIZE: Replace with your venue name */}
-                  Stonehaven at the Milestone
+                  Denver Botanic Gardens
                 </h3>
                 
                 <div className="flex items-start gap-3 mb-4">
@@ -220,7 +220,7 @@ const Details = () => {
                     <p className="font-medium text-black">Address:</p>
                     <p className="text-black">
                       {/* CUSTOMIZE: Replace with your venue address */}
-                      1723 Herbelin Rd, New Braunfels, TX 78132
+                      1007 York St, Denver, CO 80206
                     </p>
                   </div>
                 </div>
@@ -453,24 +453,6 @@ const Details = () => {
                 {/* CUSTOMIZE: Add information about food options */}
                 We will be serving a choice of Option 1 or Option 2. Please indicate your preference in the RSVP form.
               </p>
-            </div>
-            
-            {/* Registry */}
-            <div className="bg-white rounded-xl p-6 text-center border border-pale-yellow shadow-lg">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-pale-yellow rounded-full mb-4">
-                <Gift className="w-6 h-6 text-black" />
-              </div>
-              <h3 className="text-lg font-semibold text-black mb-2">Registry</h3>
-              <p className="text-black mb-4">
-                {/* CUSTOMIZE: Add information about your registry */}
-                We've registered at several stores. Visit our registry page to see our wish list.
-              </p>
-              <a 
-                href="/registry" 
-                className="text-black hover:text-pale-blue font-medium transition-colors"
-              >
-                View Registry
-              </a>
             </div>
             
             {/* Music */}

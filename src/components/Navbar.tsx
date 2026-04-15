@@ -12,7 +12,6 @@ const Navbar = () => {
     { name: 'Our Story', path: '/story' },
     { name: 'Wedding Details', path: '/details' },
     { name: 'Photo Gallery', path: '/gallery' },
-    { name: 'Registry', path: '/registry' },
     { name: 'RSVP', path: 'https://tally.so/r/A7xMDl', external: true },
   ];
 

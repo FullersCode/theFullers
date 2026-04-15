@@ -53,7 +53,7 @@ const Index = () => {
             </h3>
             <p className="text-black">
               {/* CUSTOMIZE: Replace with your wedding date and location */}
-              June 6, 2026 • Stonehaven at the Milestone, New Braunfels, TX
+              September 26, 2026 • Denver Botanic Gardens
             </p>
           </div>
           <div className="border-t border-black pt-6">

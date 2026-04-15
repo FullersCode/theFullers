@@ -31,12 +31,12 @@ const Hero = () => {
             <div className="flex items-center gap-3 text-lg">
               <Calendar className="w-6 h-6 text-pale-blue" />
               {/* CUSTOMIZE: Replace with your wedding date */}
-              <span>June 6, 2026</span>
+              <span>September 26, 2026</span>
             </div>
             <div className="flex items-center gap-3 text-lg">
               <MapPin className="w-6 h-6 text-pale-blue" />
               {/* CUSTOMIZE: Replace with your venue name and location */}
-              <span>Stonehaven at the Milestone, New Braunfels, TX</span>
+              <span>Denver Botanic Gardens</span>
             </div>
           </div>
 
@@ -48,12 +48,6 @@ const Hero = () => {
               className="bg-pale-yellow hover:bg-white text-black px-8 py-3 rounded-full font-medium transition-colors duration-200 hover:scale-105 transform"
             >
               RSVP Now
-            </a>
-            <a
-              href="/registry"
-              className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border border-white/30 px-8 py-3 rounded-full font-medium transition-all duration-200 hover:scale-105 transform"
-            >
-              View Registry
             </a>
           </div>
         </div>
