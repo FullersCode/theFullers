@@ -41,18 +41,21 @@ const Details = () => {
                   title: 'Ceremony',
                   time: '2:00 PM – 3:00 PM',
                   description: 'We will be getting married at the "Romantic Gardens" at the Denver Botanic Gardens. We assume the ceremony will take 30 minutes with 30 minutes to take photos.',
+                  headerClass: 'bg-violet-100',
                 },
                 {
                   icon: Wine,
                   title: 'Cocktail Hour',
                   time: '4:00 PM – 5:00 PM',
                   description: 'Head over to ESP Hifi Denver to enjoy some drinks and appetizers!',
+                  headerClass: 'bg-amber-100',
                 },
                 {
                   icon: UtensilsCrossed,
                   title: 'Dinner',
                   time: '5:00 PM – 6:00 PM',
                   description: 'Enjoy some wood fired pizza and salad!',
+                  headerClass: 'bg-emerald-100',
                 },
                 {
                   icon: Music,
