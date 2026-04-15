@@ -86,8 +86,8 @@ const QuickDetails = () => {
 
   const TileInner = ({ detail }: { detail: typeof details[number] }) => (
     <>
-      <div className="inline-flex items-center justify-center w-16 h-16 bg-pale-yellow rounded-full mb-4">
-        <detail.icon className="w-8 h-8 text-black" />
+      <div className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-pale-yellow rounded-full mb-4">
+        <detail.icon className="w-6 h-6 md:w-8 md:h-8 text-black" />
       </div>
       <h3 className="text-lg font-semibold text-black mb-2">{detail.title}</h3>
       <p className="text-black">{detail.info}</p>
@@ -106,7 +106,7 @@ const QuickDetails = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {details.map((detail, index) => {
             if (detail.type === 'calendar') {
               return (

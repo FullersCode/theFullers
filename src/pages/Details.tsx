@@ -10,10 +10,10 @@ const Details = () => {
       {/* Hero Section */}
       <div className="pt-24 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-serif text-black mb-6">
+          <h1 className="text-3xl md:text-6xl font-serif text-black mb-6">
             Wedding Details
           </h1>
-          <p className="text-xl text-black max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-black max-w-2xl mx-auto leading-relaxed">
             {/* CUSTOMIZE: Replace with your wedding details introduction */}
             We're excited to share all the details you need for our special day. Please read through the information below to help plan your attendance.
           </p>
@@ -44,7 +44,7 @@ const Details = () => {
                   <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
                   
                   <div className="ml-12 md:ml-0 md:w-5/12 md:pr-8 md:text-right">
-                    <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
                       <h3 className="text-xl font-semibold text-black mb-2">
                         {/* CUSTOMIZE: Event name */}
                         Ceremony
@@ -68,7 +68,7 @@ const Details = () => {
                   <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
                   
                   <div className="ml-12 md:ml-auto md:w-5/12 md:pl-8 md:text-left">
-                    <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
                       <h3 className="text-xl font-semibold text-black mb-2">
                         {/* CUSTOMIZE: Event name */}
                         Cocktail Hour
@@ -92,7 +92,7 @@ const Details = () => {
                   <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
                   
                   <div className="ml-12 md:ml-0 md:w-5/12 md:pr-8 md:text-right">
-                    <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
                       <h3 className="text-xl font-semibold text-black mb-2">
                         {/* CUSTOMIZE: Event name */}
                         Introduction of Newlyweds
@@ -116,7 +116,7 @@ const Details = () => {
                   <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
                   
                   <div className="ml-12 md:ml-auto md:w-5/12 md:pl-8 md:text-left">
-                    <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
                       <h3 className="text-xl font-semibold text-black mb-2">
                         {/* CUSTOMIZE: Event name */}
                         Dinner
@@ -140,7 +140,7 @@ const Details = () => {
                   <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
                   
                   <div className="ml-12 md:ml-0 md:w-5/12 md:pr-8 md:text-right">
-                    <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
                       <h3 className="text-xl font-semibold text-black mb-2">
                         {/* CUSTOMIZE: Event name */}
                         First Dance
@@ -164,7 +164,7 @@ const Details = () => {
                   <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-pale-yellow shadow-md z-10"></div>
                   
                   <div className="ml-12 md:ml-auto md:w-5/12 md:pl-8 md:text-left">
-                    <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
                       <h3 className="text-xl font-semibold text-black mb-2">
                         {/* CUSTOMIZE: Event name */}
                         Dancing until Dawn
@@ -200,15 +200,15 @@ const Details = () => {
           
           <div className="bg-white rounded-xl shadow-xl overflow-hidden border border-pale-yellow">
             <div className="md:flex">
-              <div className="md:w-1/2">
+              <div className="md:w-1/2 h-64 md:h-auto">
                 {/* CUSTOMIZE: Replace with your venue image */}
-                <img 
-                  src="https://waltersweddingestates.com/wp-content/uploads/2021/12/5-walters-wedding-estates-our-venues-austin-and-san-antonio-collection-stonehaven-hall-at-the-milestone-new-braunfels-12-24-gallery-image-2.jpg" 
-                  alt="Venue" 
+                <img
+                  src="https://waltersweddingestates.com/wp-content/uploads/2021/12/5-walters-wedding-estates-our-venues-austin-and-san-antonio-collection-stonehaven-hall-at-the-milestone-new-braunfels-12-24-gallery-image-2.jpg"
+                  alt="Venue"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-8 md:w-1/2">
+              <div className="p-4 sm:p-8 md:w-1/2">
                 <h3 className="text-2xl font-semibold text-black mb-4">
                   {/* CUSTOMIZE: Replace with your venue name */}
                   Denver Botanic Gardens
@@ -284,7 +284,7 @@ const Details = () => {
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="p-6 flex flex-col h-[280px]">
+              <div className="p-4 sm:p-6 flex flex-col">
                 <div className="flex items-center mb-4">
                   <Hotel className="w-5 h-5 text-[#7BA7BC] mr-2" />
                   <h3 className="text-xl font-semibold text-black">
@@ -296,7 +296,7 @@ const Details = () => {
                     Located just 30 minutes from the venue. This is one of the nicest hotels in San Antonio and is home to the renowned TPC San Antonio golf course played on the PGA tour.
                   </p>
                 </div>
-                <div className="flex justify-between items-center mt-4">
+                <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-4 gap-3">
                   <span className="text-black font-medium text-lg">
                     $400/night
                   </span>
@@ -321,7 +321,7 @@ const Details = () => {
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="p-6 flex flex-col h-[280px]">
+              <div className="p-4 sm:p-6 flex flex-col">
                 <div className="flex items-center mb-4">
                   <Hotel className="w-5 h-5 text-[#7BA7BC] mr-2" />
                   <h3 className="text-xl font-semibold text-black">
@@ -333,7 +333,7 @@ const Details = () => {
                     Located a little farther from the venue, but closer to the San Antonio airport. This is a hotel that will provide you with the easiest access to everything and is the perfect middle ground between being in between the airport and the venue.
                   </p>
                 </div>
-                <div className="flex justify-between items-center mt-4">
+                <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-4 gap-3">
                   <span className="text-black font-medium text-lg">
                     $185/night
                   </span>
@@ -358,7 +358,7 @@ const Details = () => {
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="p-6 flex flex-col h-[280px]">
+              <div className="p-4 sm:p-6 flex flex-col">
                 <div className="flex items-center mb-4">
                   <Hotel className="w-5 h-5 text-[#7BA7BC] mr-2" />
                   <h3 className="text-xl font-semibold text-black">
@@ -370,7 +370,7 @@ const Details = () => {
                     Located approximately 45 minutes from the venue. If you are interested in staying at the only 5 Star Hotel San Antonio has to offer, Hotel Emma is it. While it is located the farthest from the Venue, it gives you the opportunity to experience San Antonio if you plan on staying for more than a couple days.
                   </p>
                 </div>
-                <div className="flex justify-between items-center mt-4">
+                <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-4 gap-3">
                   <span className="text-black font-medium text-lg">
                     $560/night
                   </span>
@@ -399,7 +399,7 @@ const Details = () => {
             </h2>
           </div>
           
-          <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 border border-pale-yellow">
+          <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-4 sm:p-8 border border-pale-yellow">
             {/* CUSTOMIZE: Add your travel information */}
             <div className="space-y-8">
               <div>

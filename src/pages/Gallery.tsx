@@ -99,15 +99,15 @@ const Gallery = () => {
       {/* Lightbox */}
       {selectedImage && (
         <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center">
-          <button 
-            className="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 transition-colors"
+          <button
+            className="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 transition-colors p-3 min-w-[44px] min-h-[44px] flex items-center justify-center"
             onClick={closeLightbox}
           >
             &times;
           </button>
-          
-          <button 
-            className="absolute left-4 md:left-8 text-white text-4xl hover:text-gray-300 transition-colors"
+
+          <button
+            className="absolute left-2 md:left-8 text-white text-4xl hover:text-gray-300 transition-colors p-3 min-w-[44px] min-h-[44px] flex items-center justify-center"
             onClick={prevImage}
           >
             &#10094;
@@ -119,8 +119,8 @@ const Gallery = () => {
             className="max-w-[90%] max-h-[90vh] object-contain"
           />
           
-          <button 
-            className="absolute right-4 md:right-8 text-white text-4xl hover:text-gray-300 transition-colors"
+          <button
+            className="absolute right-2 md:right-8 text-white text-4xl hover:text-gray-300 transition-colors p-3 min-w-[44px] min-h-[44px] flex items-center justify-center"
             onClick={nextImage}
           >
             &#10095;

@@ -64,7 +64,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-black hover:text-black transition-colors"
+              className="text-black hover:text-black transition-colors p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -73,8 +73,8 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-pale-yellow">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden py-2 border-t border-pale-yellow">
+            <div className="flex flex-col">
               {navItems.map((item) =>
                 item.external ? (
                   <a
@@ -83,7 +83,7 @@ const Navbar = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsMenuOpen(false)}
-                    className="text-sm font-medium transition-colors duration-200 text-black hover:text-black"
+                    className="text-base font-medium transition-colors duration-200 text-black hover:text-black py-3 px-2 min-h-[44px] flex items-center"
                   >
                     {item.name}
                   </a>
@@ -92,7 +92,7 @@ const Navbar = () => {
                     key={item.name}
                     to={item.path}
                     onClick={() => setIsMenuOpen(false)}
-                    className={`text-sm font-medium transition-colors duration-200 ${
+                    className={`text-base font-medium transition-colors duration-200 py-3 px-2 min-h-[44px] flex items-center ${
                       isActive(item.path)
                         ? 'text-black'
                         : 'text-black hover:text-black'

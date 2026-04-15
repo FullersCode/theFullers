@@ -83,7 +83,7 @@ const FAQ = () => {
       {/* Hero */}
       <div className="pt-24 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-serif text-black mb-6">
+          <h1 className="text-3xl md:text-6xl font-serif text-black mb-6">
             FAQs
           </h1>
           <p className="text-xl text-black max-w-2xl mx-auto leading-relaxed">
@@ -101,13 +101,13 @@ const FAQ = () => {
               id={faq.id}
               className="bg-white border border-pale-yellow rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden scroll-mt-24"
             >
-              <div className="flex items-center gap-4 bg-pale-yellow px-6 py-4">
+              <div className="flex items-center gap-3 bg-pale-yellow px-4 sm:px-6 py-4">
                 <div className="inline-flex items-center justify-center w-10 h-10 bg-white rounded-full flex-shrink-0">
                   <faq.icon className="w-5 h-5 text-black" />
                 </div>
                 <h2 className="text-lg font-semibold text-black">{faq.question}</h2>
               </div>
-              <div className="px-6 py-5 text-black leading-relaxed">
+              <div className="px-4 sm:px-6 py-5 text-black leading-relaxed">
                 {faq.answer}
               </div>
             </div>

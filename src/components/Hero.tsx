@@ -18,16 +18,16 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <div className="animate-fade-in">
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light mb-6 tracking-wide">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-light mb-6 tracking-wide">
             {/* CUSTOMIZE: Replace with couple's names */}
             LinZi <span className="text-pale-blue">&</span> Caymen
           </h1>
-          <p className="text-xl md:text-2xl font-light mb-8 opacity-90">
+          <p className="text-base sm:text-xl md:text-2xl font-light mb-8 opacity-90">
             {/* CUSTOMIZE: Replace with your wedding tagline */}
             To all of our friends and family, we invite you to celebrate with us on our big day!
           </p>
           
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-8 mb-8 md:mb-12">
             <div className="flex items-center gap-3 text-lg">
               <Calendar className="w-6 h-6 text-pale-blue" />
               {/* CUSTOMIZE: Replace with your wedding date */}
