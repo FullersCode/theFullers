@@ -103,49 +103,83 @@ const Details = () => {
             </h2>
           </div>
           
-          <div className="bg-white rounded-xl shadow-xl overflow-hidden border border-pale-yellow">
-            <div className="md:flex">
-              <div className="md:w-1/2 h-64 md:h-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Ceremony Venue */}
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden border border-pale-yellow">
+              <div className="bg-pale-yellow px-5 py-2">
+                <span className="text-sm font-semibold text-black uppercase tracking-wider">Ceremony</span>
+              </div>
+              <div className="h-56 overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=600&fit=crop&crop=center"
                   alt="Denver Botanic Gardens"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-4 sm:p-8 md:w-1/2">
-                <h3 className="text-2xl font-semibold text-black mb-4">
-                  {/* CUSTOMIZE: Replace with your venue name */}
-                  Denver Botanic Gardens
-                </h3>
-                
+              <div className="p-5 sm:p-6">
+                <h3 className="text-xl font-semibold text-black mb-4">Denver Botanic Gardens</h3>
                 <div className="flex items-start gap-3 mb-4">
-                  <MapPin className="w-5 h-5 text-pale-blue flex-shrink-0 mt-1" />
+                  <MapPin className="w-5 h-5 text-black flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-medium text-black">Address:</p>
-                    <p className="text-black">
-                      {/* CUSTOMIZE: Replace with your venue address */}
-                      1007 York St, Denver, CO 80206
-                    </p>
+                    <p className="font-medium text-black">Address</p>
+                    <p className="text-black">1007 York St, Denver, CO 80206</p>
                   </div>
                 </div>
-                
                 <div className="flex items-start gap-3 mb-6">
-                  <Car className="w-5 h-5 text-pale-blue flex-shrink-0 mt-1" />
+                  <Car className="w-5 h-5 text-black flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-medium text-black">Parking Information:</p>
-                    <p className="text-black">
-                      The Denver Botanic Gardens has plenty of garage parking across the street from the venue!
-                    </p>
+                    <p className="font-medium text-black">Parking</p>
+                    <p className="text-black">Plenty of garage parking across the street from the venue!</p>
                   </div>
                 </div>
-                
                 <a
                   href="https://maps.app.goo.gl/2S2Rw29hJra9mt1n8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-black font-medium hover:text-pale-blue transition-colors"
+                  className="inline-flex items-center text-black font-medium hover:opacity-70 transition-opacity"
                 >
-                  {/* CUSTOMIZE: Replace with link to venue website or map */}
+                  View on Map
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            {/* Reception Venue */}
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden border border-pale-yellow">
+              <div className="bg-pale-yellow px-5 py-2">
+                <span className="text-sm font-semibold text-black uppercase tracking-wider">Reception</span>
+              </div>
+              <div className="h-56 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&h=600&fit=crop&crop=center"
+                  alt="ESP Hifi Denver"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 sm:p-6">
+                <h3 className="text-xl font-semibold text-black mb-4">ESP Hifi Denver</h3>
+                <div className="flex items-start gap-3 mb-4">
+                  <MapPin className="w-5 h-5 text-black flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium text-black">Address</p>
+                    <p className="text-black">748 Santa Fe Dr, Denver, CO 80204</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 mb-6">
+                  <Car className="w-5 h-5 text-black flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium text-black">Parking</p>
+                    <p className="text-black">ESP Hifi is on Santa Fe and offers street parking. There is limited parking in a lot close to the venue reserved for handicap or family who need it.</p>
+                  </div>
+                </div>
+                <a
+                  href="https://maps.app.goo.gl/QvVygQQBLRDepjDL8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-black font-medium hover:opacity-70 transition-opacity"
+                >
                   View on Map
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
