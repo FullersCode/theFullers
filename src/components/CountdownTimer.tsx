@@ -11,7 +11,7 @@ const CountdownTimer = () => {
 
   useEffect(() => {
     // CUSTOMIZE: Replace with your wedding date and time in format 'YYYY-MM-DDTHH:MM:SS'
-    const weddingDate = new Date('2026-06-06T18:00:00').getTime();
+    const weddingDate = new Date('2026-09-26T18:00:00').getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
