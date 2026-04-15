@@ -1,14 +1,54 @@
 
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Calendar, Clock, MapPin, Users } from 'lucide-react';
 
 const QuickDetails = () => {
-  // CUSTOMIZE: Replace with your wedding details
+  const [showCalendarMenu, setShowCalendarMenu] = useState(false);
+  const calendarRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (calendarRef.current && !calendarRef.current.contains(e.target as Node)) {
+        setShowCalendarMenu(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const handleAppleCalendar = () => {
+    const ics = [
+      'BEGIN:VCALENDAR',
+      'VERSION:2.0',
+      'CALSCALE:GREGORIAN',
+      'BEGIN:VEVENT',
+      'SUMMARY:LinZi & Caymen Wedding',
+      'DTSTART;TZID=America/Denver:20260926T140000',
+      'DTEND;TZID=America/Denver:20260926T160000',
+      'LOCATION:Denver Botanic Gardens\\, 1007 York St\\, Denver\\, CO 80206',
+      "DESCRIPTION:Join us to celebrate LinZi & Caymen's wedding!",
+      'END:VEVENT',
+      'END:VCALENDAR',
+    ].join('\r\n');
+    const blob = new Blob([ics], { type: 'text/calendar' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'linzi-caymen-wedding.ics';
+    a.click();
+    URL.revokeObjectURL(url);
+    setShowCalendarMenu(false);
+  };
+
+  const googleCalUrl =
+    'https://calendar.google.com/calendar/render?action=TEMPLATE&text=LinZi+%26+Caymen+Wedding&dates=20260926T200000Z/20260926T220000Z&details=Join+us+to+celebrate+LinZi+%26+Caymen%27s+wedding!&location=Denver+Botanic+Gardens%2C+1007+York+St%2C+Denver%2C+CO+80206';
+
   const details = [
     {
       icon: Calendar,
       title: 'Wedding Date',
-      info: 'September 26, 2026', // CUSTOMIZE: Replace with your wedding date
+      info: 'September 26, 2026',
+      type: 'calendar' as const,
     },
     {
       icon: Clock,
@@ -19,6 +59,7 @@ const QuickDetails = () => {
       icon: MapPin,
       title: 'Ceremony Venue',
       info: 'Denver Botanic Gardens',
+      href: 'https://maps.app.goo.gl/2S2Rw29hJra9mt1n8',
     },
     {
       icon: Users,
@@ -34,8 +75,22 @@ const QuickDetails = () => {
       icon: MapPin,
       title: 'Reception Venue',
       info: 'ESP Hifi Denver',
+      href: 'https://maps.app.goo.gl/QvVygQQBLRDepjDL8',
     },
   ];
+
+  const baseTile = 'text-center p-6 rounded-xl bg-white border border-pale-yellow transition-all duration-200';
+  const clickableTile = baseTile + ' cursor-pointer hover:shadow-lg hover:scale-105';
+
+  const TileInner = ({ detail }: { detail: typeof details[number] }) => (
+    <>
+      <div className="inline-flex items-center justify-center w-16 h-16 bg-pale-yellow rounded-full mb-4">
+        <detail.icon className="w-8 h-8 text-black" />
+      </div>
+      <h3 className="text-lg font-semibold text-black mb-2">{detail.title}</h3>
+      <p className="text-black">{detail.info}</p>
+    </>
+  );
 
   return (
     <div className="py-16 bg-white">
@@ -45,28 +100,67 @@ const QuickDetails = () => {
             Wedding Details
           </h2>
           <p className="text-lg text-black max-w-2xl mx-auto">
-            {/* CUSTOMIZE: Replace with your details intro text */}
             Here are all of the essential details for our special day. We can't wait to celebrate with you!
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {details.map((detail, index) => (
-            <div
-              key={index}
-              className="text-center p-6 rounded-xl bg-white border border-pale-yellow hover:shadow-lg transition-shadow duration-200"
-            >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-pale-yellow rounded-full mb-4">
-                <detail.icon className="w-8 h-8 text-black" />
-              </div>
-              <h3 className="text-lg font-semibold text-black mb-2">{detail.title}</h3>
-              <p className="text-black">{detail.info}</p>
-            </div>
-          ))}
-        </div>
+          {details.map((detail, index) => {
+            if (detail.type === 'calendar') {
+              return (
+                <div key={index} className="relative" ref={calendarRef}>
+                  <div
+                    className={clickableTile}
+                    onClick={() => setShowCalendarMenu(!showCalendarMenu)}
+                  >
+                    <TileInner detail={detail} />
+                    <p className="text-xs text-sage-green mt-2 font-medium">+ Add to calendar</p>
+                  </div>
+                  {showCalendarMenu && (
+                    <div className="absolute z-10 top-full mt-2 left-0 right-0 bg-white border border-pale-yellow rounded-xl shadow-xl overflow-hidden">
+                      <a
+                        href={googleCalUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center px-4 py-3 hover:bg-pale-yellow transition-colors text-sm font-medium text-black"
+                        onClick={() => setShowCalendarMenu(false)}
+                      >
+                        Google Calendar
+                      </a>
+                      <button
+                        className="w-full text-left px-4 py-3 hover:bg-pale-yellow transition-colors text-sm font-medium text-black border-t border-pale-yellow"
+                        onClick={handleAppleCalendar}
+                      >
+                        Apple Calendar
+                      </button>
+                    </div>
+                  )}
+                </div>
+              );
+            }
 
-        {/* CUSTOMIZE: Add more wedding details sections here if needed */}
-        {/* Examples: Transportation info, Hotel recommendations, Things to do, etc. */}
+            if (detail.href) {
+              return (
+                <a
+                  key={index}
+                  href={detail.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={clickableTile + ' block'}
+                >
+                  <TileInner detail={detail} />
+                  <p className="text-xs text-sage-green mt-2 font-medium">Get directions →</p>
+                </a>
+              );
+            }
+
+            return (
+              <div key={index} className={baseTile}>
+                <TileInner detail={detail} />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
