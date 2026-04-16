@@ -12,7 +12,7 @@ const Navbar = () => {
     { name: 'Wedding Details', path: '/details' },
     { name: 'Photo Gallery', path: '/gallery' },
     { name: 'FAQ', path: '/faq' },
-    { name: 'RSVP', path: 'https://tally.so/r/A7xMDl', external: true },
+    { name: 'RSVP', path: '/rsvp' },
   ];
 
   const isActive = (path: string) => location.pathname === path;

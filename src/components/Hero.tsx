@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Calendar, MapPin } from 'lucide-react';
 
 const Hero = () => {
@@ -41,14 +42,12 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://tally.so/r/A7xMDl"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/rsvp"
               className="bg-pale-yellow hover:bg-white text-black px-8 py-3 rounded-full font-medium transition-colors duration-200 hover:scale-105 transform"
             >
               RSVP Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>
