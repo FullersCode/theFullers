@@ -16,9 +16,18 @@ const Gallery = () => {
   // CUSTOMIZE: Replace this array with your actual photos
   // Format: { id: unique number, src: path to image, alt: description, width: original width, height: original height }
   const [images, setImages] = useState<GalleryImage[]>([
-    // CUSTOMIZE: Add your engagement photos here
-    // Example format:
-    // { id: 1, src: "/path/to/image.jpg", alt: "Description of photo", width: 1200, height: 800 },
+    { id: 1,  src: '/theFullers/images/CaymenLinZi-02.jpeg',   alt: 'LinZi and Caymen in a field',           width: 800,  height: 1200 },
+    { id: 2,  src: '/theFullers/images/EngagementEuro-03.jpeg', alt: 'Kiss on a bridge in Europe',            width: 1600, height: 900  },
+    { id: 3,  src: '/theFullers/images/EngagementEuro-07.jpeg', alt: 'Sitting together under a gazebo',       width: 800,  height: 1200 },
+    { id: 4,  src: '/theFullers/images/IMG_0091.jpg',           alt: 'Copenhagen waterfront',                 width: 1200, height: 1200 },
+    { id: 5,  src: '/theFullers/images/IMG_0218.jpg',           alt: 'Outside Vaekst restaurant',             width: 1200, height: 1200 },
+    { id: 6,  src: '/theFullers/images/IMG_0586.jpg',           alt: 'Seattle waterfront',                    width: 1200, height: 1200 },
+    { id: 7,  src: '/theFullers/images/IMG_0812.jpg',           alt: 'Celebrating at home',                   width: 1200, height: 900  },
+    { id: 8,  src: '/theFullers/images/IMG_1309.jpg',           alt: 'Proposal moment',                       width: 900,  height: 1200 },
+    { id: 9,  src: '/theFullers/images/IMG_1318.jpg',           alt: 'Thrift shopping together',              width: 900,  height: 1200 },
+    { id: 10, src: '/theFullers/images/IMG_1371.jpg',           alt: 'Evening out in Copenhagen',             width: 1200, height: 900  },
+    { id: 11, src: '/theFullers/images/IMG_1632.jpg',           alt: 'Mirror selfie together',                width: 1200, height: 1200 },
+    { id: 12, src: '/theFullers/images/IMG_9935.jpg',           alt: 'Mountain lake selfie',                  width: 1200, height: 900  },
   ]);
 
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
@@ -60,8 +69,7 @@ const Gallery = () => {
             Photo Gallery
           </h1>
           <p className="text-xl text-black max-w-2xl mx-auto leading-relaxed">
-            {/* CUSTOMIZE: Replace with your gallery introduction */}
-            {/* Example: Explore our favorite moments from our engagement photoshoot. Click on any image to enlarge. */}
+            Some of our favorite moments together. Click any photo to take a closer look.
           </p>
         </div>
       </div>
@@ -128,34 +136,6 @@ const Gallery = () => {
         </div>
       )}
 
-      {/* Upload Instructions */}
-      <div className="py-16 bg-pale-yellow">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-serif text-black mb-6">
-            Add Your Photos
-          </h2>
-          <div className="bg-white rounded-xl shadow-lg p-8 border border-pale-yellow">
-            <p className="text-lg text-black mb-6">
-              {/* CUSTOMIZE: Instructions for adding photos */}
-              To add your engagement photos to the gallery, you'll need to:
-            </p>
-            <ol className="text-left space-y-4 text-black max-w-lg mx-auto">
-              <li className="flex items-start">
-                <span className="bg-pale-yellow rounded-full w-6 h-6 flex items-center justify-center text-black font-medium mr-2 flex-shrink-0">1</span>
-                <span>Upload your images to the public folder in the project</span>
-              </li>
-              <li className="flex items-start">
-                <span className="bg-pale-yellow rounded-full w-6 h-6 flex items-center justify-center text-black font-medium mr-2 flex-shrink-0">2</span>
-                <span>Edit this file (Gallery.tsx) to include your images in the images array</span>
-              </li>
-              <li className="flex items-start">
-                <span className="bg-pale-yellow rounded-full w-6 h-6 flex items-center justify-center text-black font-medium mr-2 flex-shrink-0">3</span>
-                <span>For each image, include a unique ID, the path to the image, alt text, and the original dimensions</span>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
