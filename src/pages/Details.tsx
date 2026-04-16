@@ -206,73 +206,32 @@ const Details = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Hotel 1 - JW Marriott */}
+            {/* Hotel 1 - Halcyon Hotel Cherry Creek */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-pale-yellow">
               <div className="h-48 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=500&h=300&fit=crop&crop=center" 
-                  alt="JW Marriott San Antonio Hill Country Resort & Spa" 
+                <img
+                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&h=300&fit=crop&crop=center"
+                  alt="Halcyon Hotel Cherry Creek"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-4 sm:p-6 flex flex-col">
                 <div className="flex items-center mb-4">
                   <Hotel className="w-5 h-5 text-[#7BA7BC] mr-2" />
-                  <h3 className="text-xl font-semibold text-black">
-                    JW Marriott
-                  </h3>
+                  <h3 className="text-xl font-semibold text-black">Halcyon Hotel Cherry Creek</h3>
                 </div>
-                <div className="flex-grow flex items-center justify-center">
-                  <p className="text-black text-center text-sm">
-                    Located just 30 minutes from the venue. This is one of the nicest hotels in San Antonio and is home to the renowned TPC San Antonio golf course played on the PGA tour.
+                <div className="flex-grow">
+                  <p className="text-black text-sm">
+                    A stylish boutique hotel in the Cherry Creek neighborhood, just a short walk from Denver Botanic Gardens. One of the closest hotels to the ceremony venue.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-4 gap-3">
-                  <span className="text-black font-medium text-lg">
-                    $400/night
-                  </span>
-                  <a 
-                    href="https://www.marriott.com/search/availabilityCalendar.mi?isRateCalendar=true&propertyCode=SATJW&isSearch=true&currency=&costTab=average#/0/" 
+                  <span className="text-black font-medium text-lg">~$300/night</span>
+                  <a
+                    href="https://www.halcyonhotelcherrycreek.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-4 py-2 rounded-full transition-colors"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div>
-            
-            {/* Hotel 2 - Courtyard Marriott */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-pale-yellow">
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=500&h=300&fit=crop&crop=center" 
-                  alt="Courtyard by Marriott San Antonio Airport" 
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-4 sm:p-6 flex flex-col">
-                <div className="flex items-center mb-4">
-                  <Hotel className="w-5 h-5 text-[#7BA7BC] mr-2" />
-                  <h3 className="text-xl font-semibold text-black">
-                    Courtyard Marriott
-                  </h3>
-                </div>
-                <div className="flex-grow flex items-center justify-center">
-                  <p className="text-black text-center text-sm">
-                    Located a little farther from the venue, but closer to the San Antonio airport. This is a hotel that will provide you with the easiest access to everything and is the perfect middle ground between being in between the airport and the venue.
-                  </p>
-                </div>
-                <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-4 gap-3">
-                  <span className="text-black font-medium text-lg">
-                    $185/night
-                  </span>
-                  <a 
-                    href="https://www.marriott.com/reservation/rateListMenu.mi?dclid=CjkKEQjw6NrBBhCnsr3GzNuZ-dwBEiQAFJKSzdZYjaWswLT_FEGE6nioptaK-epr62qWQpHtc12vefe3w_wcB&gbraid=0AAAAAo3SzG6xw854UOJGzACxCA_PvgDel&gclid=CjwKCAjw6NrBBhB6EiwAvnT_rpIy08LjoDXH3ROE8WR-kpt8zwDWRpHO2f0yVJm2Xgcpk_sh3_Eq_RoCGC0QAvD_BwE" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-4 py-2 rounded-full transition-colors"
+                    className="text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-4 py-2 rounded-full transition-colors text-center"
                   >
                     Book Now
                   </a>
@@ -280,36 +239,32 @@ const Details = () => {
               </div>
             </div>
 
-            {/* Hotel 3 - Hotel Emma */}
+            {/* Hotel 2 - JW Marriott Denver Cherry Creek */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-pale-yellow">
               <div className="h-48 overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&h=300&fit=crop&crop=center" 
-                  alt="Hotel Emma San Antonio" 
+                <img
+                  src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=500&h=300&fit=crop&crop=center"
+                  alt="JW Marriott Denver Cherry Creek"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-4 sm:p-6 flex flex-col">
                 <div className="flex items-center mb-4">
                   <Hotel className="w-5 h-5 text-[#7BA7BC] mr-2" />
-                  <h3 className="text-xl font-semibold text-black">
-                    Hotel Emma
-                  </h3>
+                  <h3 className="text-xl font-semibold text-black">JW Marriott Cherry Creek</h3>
                 </div>
-                <div className="flex-grow flex items-center justify-center">
-                  <p className="text-black text-center text-sm">
-                    Located approximately 45 minutes from the venue. If you are interested in staying at the only 5 Star Hotel San Antonio has to offer, Hotel Emma is it. While it is located the farthest from the Venue, it gives you the opportunity to experience San Antonio if you plan on staying for more than a couple days.
+                <div className="flex-grow">
+                  <p className="text-black text-sm">
+                    Upscale luxury hotel in the heart of Cherry Creek, minutes from Denver Botanic Gardens and steps from great dining and shopping.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-4 gap-3">
-                  <span className="text-black font-medium text-lg">
-                    $560/night
-                  </span>
-                  <a 
-                    href="https://be.synxis.com/?_gl=1*1nylehy*_gcl_au*MTQ1MDgyNjI4LjE3NDc4NzUxNzE.*_ga*MTM4ODYwMTk4MS4xNzQ3ODc1MTcy*_ga_0D7P5TR5JN*czE3NDg0ODUyMTkkbzIkZzEkdDE3NDg0ODUzMTkkajU0JGwwJGgxNzQxODE2MjE3&adult=2&arrive=2025-05-28&chain=10237&child=0&currency=USD&depart=2025-05-29&hotel=65605&level=hotel&locale=en-US&productcurrency=USD&rooms=1" 
+                  <span className="text-black font-medium text-lg">~$400/night</span>
+                  <a
+                    href="https://www.marriott.com/en-us/hotels/dencc-jw-marriott-denver-cherry-creek/overview/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-4 py-2 rounded-full transition-colors"
+                    className="text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-4 py-2 rounded-full transition-colors text-center"
                   >
                     Book Now
                   </a>
@@ -317,6 +272,38 @@ const Details = () => {
               </div>
             </div>
 
+            {/* Hotel 3 - The Brown Palace */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-pale-yellow">
+              <div className="h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=500&h=300&fit=crop&crop=center"
+                  alt="The Brown Palace Hotel Denver"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-4 sm:p-6 flex flex-col">
+                <div className="flex items-center mb-4">
+                  <Hotel className="w-5 h-5 text-[#7BA7BC] mr-2" />
+                  <h3 className="text-xl font-semibold text-black">The Brown Palace Hotel</h3>
+                </div>
+                <div className="flex-grow">
+                  <p className="text-black text-sm">
+                    Denver's iconic historic landmark hotel in downtown, about 15 minutes from the venue. A great option if you want to experience classic Denver charm.
+                  </p>
+                </div>
+                <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-4 gap-3">
+                  <span className="text-black font-medium text-lg">~$280/night</span>
+                  <a
+                    href="https://www.brownpalace.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-4 py-2 rounded-full transition-colors text-center"
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
