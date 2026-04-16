@@ -203,10 +203,6 @@ const Details = () => {
             <h2 className="text-3xl md:text-4xl font-serif text-black mb-4">
               Hotel Recommendations
             </h2>
-            <p className="text-lg text-black max-w-2xl mx-auto">
-              {/* CUSTOMIZE: Add accommodations intro */}
-              We've reserved a room at the JW Marriott for our wedding night, and anyone wanting to stay at the hotel as well is welcome to stay.
-            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
