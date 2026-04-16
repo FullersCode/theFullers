@@ -239,29 +239,29 @@ const Details = () => {
               </div>
             </div>
 
-            {/* Hotel 2 - JW Marriott Denver Cherry Creek */}
+            {/* Hotel 2 - Hampton Inn Cherry Creek */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-pale-yellow">
               <div className="h-48 overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=500&h=300&fit=crop&crop=center"
-                  alt="JW Marriott Denver Cherry Creek"
+                  alt="Hampton Inn & Suites Denver Cherry Creek"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-4 sm:p-6 flex flex-col">
                 <div className="flex items-center mb-4">
                   <Hotel className="w-5 h-5 text-[#7BA7BC] mr-2" />
-                  <h3 className="text-xl font-semibold text-black">JW Marriott Cherry Creek</h3>
+                  <h3 className="text-xl font-semibold text-black">Hampton Inn & Suites Cherry Creek</h3>
                 </div>
                 <div className="flex-grow">
                   <p className="text-black text-sm">
-                    Upscale luxury hotel in the heart of Cherry Creek, minutes from Denver Botanic Gardens and steps from great dining and shopping.
+                    A comfortable and affordable option in the Cherry Creek area, close to Denver Botanic Gardens. Great value with all the essentials covered.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-4 gap-3">
-                  <span className="text-black font-medium text-lg">~$400/night</span>
+                  <span className="text-black font-medium text-lg">~$160/night</span>
                   <a
-                    href="https://www.marriott.com/en-us/hotels/dencc-jw-marriott-denver-cherry-creek/overview/"
+                    href="https://www.hilton.com/en/hotels/denechx-hampton-suites-denver-cherry-creek/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-4 py-2 rounded-full transition-colors text-center"
