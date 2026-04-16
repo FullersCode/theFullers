@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import { Shirt, MapPin, Car, Camera, Phone, HelpCircle } from 'lucide-react';
+import { Shirt, MapPin, Car, Camera, Phone, Users } from 'lucide-react';
 
 const faqs = [
   {
@@ -43,6 +43,16 @@ const faqs = [
     answer: (
       <p>
         We ask that guests put their phones away during the ceremony so everyone can be fully present. Our photographer will capture all the special moments. Feel free to take as many photos as you'd like during cocktail hour and the reception!
+      </p>
+    ),
+  },
+  {
+    id: 'guests',
+    icon: Users,
+    question: 'Can I bring guests?',
+    answer: (
+      <p>
+        At this time, we are only allowing invited members and no children please.
       </p>
     ),
   },
