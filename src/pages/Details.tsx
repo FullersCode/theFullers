@@ -210,7 +210,7 @@ const Details = () => {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-pale-yellow">
               <div className="h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&h=300&fit=crop&crop=center"
+                  src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=500&h=300&fit=crop&crop=center"
                   alt="Halcyon Hotel Cherry Creek"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -243,7 +243,7 @@ const Details = () => {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-pale-yellow">
               <div className="h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=500&h=300&fit=crop&crop=center"
+                  src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=500&h=300&fit=crop&crop=center"
                   alt="Hampton Inn & Suites Denver Cherry Creek"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -276,7 +276,7 @@ const Details = () => {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-pale-yellow">
               <div className="h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=500&h=300&fit=crop&crop=center"
+                  src="https://marriott.cdn.tambourine.com/the-brown-palace-hotel-and-spa/media/intro-68f6825d00edc.jpg"
                   alt="The Brown Palace Hotel Denver"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -318,32 +318,25 @@ const Details = () => {
           </div>
           
           <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-4 sm:p-8 border border-pale-yellow">
-            {/* CUSTOMIZE: Add your travel information */}
             <div className="space-y-8">
-              <div>
-                <h3 className="text-xl font-semibold text-black mb-3">By Air</h3>
-                <p className="text-black">
-                  {/* CUSTOMIZE: Airport information */}
-                  The nearest airport is the San Antonio Airport, which is approximately 40 minutes from the venue, and 30 minutes from the hotel we are staying at. If you are thinking
-                  of flying into Austin, that would work too, but be careful as the traffic south from Austin to San Antonio is never enjoyable.
-                </p>
-              </div>
-              
-              <div>
-                <h3 className="text-xl font-semibold text-black mb-3">By Car</h3>
-                <p className="text-black">
-                  {/* CUSTOMIZE: Driving directions */}
-                  Most likely, you will be staying near or around San Antonio. In this case, as you are driving north on 281, you will get off the highway and take a right on 46. Our venue
-                  is just 10-15 minutes after you make that turn, and the venue will be on the right side of the road near a small vineyard.
-                </p>
-              </div>
-              
               <div>
                 <h3 className="text-xl font-semibold text-black mb-3">Transportation</h3>
                 <p className="text-black">
-                  {/* CUSTOMIZE: Transportation options */}
-                  There is currently no shuttle service that will be provided by us, but we recommend getting an uber to our venue as it is not too far from San Antonio. Please make sure
-                  that you are not drinking and driving to or from the venue. We want everyone to have a great time so if you plan on doing so with alcohol, make sure you Uber!
+                  There is no shuttle service that will be provided by us, but we recommend getting an Uber to our venue if you are drinking. We want everyone to have a great time!
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-black mb-3">Parking at Denver Botanic Gardens</h3>
+                <p className="text-black">
+                  Denver Botanic Gardens has plenty of garage parking for free.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-black mb-3">Parking at ESP Hifi</h3>
+                <p className="text-black">
+                  Parking at ESP Hifi is all street parking, with the exception of a small lot close to the venue reserved for handicap parking or those who are elderly.
                 </p>
               </div>
             </div>
