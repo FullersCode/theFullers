@@ -7,12 +7,14 @@ const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('/theFullers/images/JAW08523.jpg')`,
-        }}
-      >
+      <div className="absolute inset-0">
+        <img
+          src="/theFullers/images/JAW08523.jpg"
+          alt=""
+          fetchPriority="high"
+          decoding="async"
+          className="w-full h-full object-cover object-center"
+        />
         <div className="absolute inset-0 bg-black/30" />
       </div>
 
