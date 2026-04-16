@@ -22,7 +22,7 @@ const faqs = [
     answer: (
       <>
         <p className="mb-2"><strong>Ceremony:</strong> Denver Botanic Gardens — 1007 York St, Denver, CO 80206</p>
-        <p><strong>Reception:</strong> ESP Hifi Denver</p>
+        <p><strong>Reception:</strong> ESP Hifi Denver — 748 Santa Fe Dr, Denver, CO 80204</p>
       </>
     ),
   },
