@@ -353,28 +353,26 @@ const Details = () => {
             </h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {/* Dinner Options */}
             <div className="bg-white rounded-xl p-6 text-center border border-pale-yellow shadow-lg">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-pale-yellow rounded-full mb-4">
                 <UtensilsCrossed className="w-6 h-6 text-black" />
               </div>
-              <h3 className="text-lg font-semibold text-black mb-2">Dinner Options</h3>
+              <h3 className="text-lg font-semibold text-black mb-2">Dinner</h3>
               <p className="text-black">
-                {/* CUSTOMIZE: Add information about food options */}
-                We will be serving a choice of Option 1 or Option 2. Please indicate your preference in the RSVP form.
+                Dinner will be a wood fired pizza truck — there will be 6 different pizzas to choose from and will have vegetarian options. We will also have roasted vegetables, charcuterie and salad!
               </p>
             </div>
-            
-            {/* Music */}
+
+            {/* Drinks */}
             <div className="bg-white rounded-xl p-6 text-center border border-pale-yellow shadow-lg">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-pale-yellow rounded-full mb-4">
-                <Music className="w-6 h-6 text-black" />
+                <Wine className="w-6 h-6 text-black" />
               </div>
-              <h3 className="text-lg font-semibold text-black mb-2">Song Requests</h3>
+              <h3 className="text-lg font-semibold text-black mb-2">Drinks</h3>
               <p className="text-black">
-                {/* CUSTOMIZE: Add information about music requests */}
-                Have a song you want to hear at the reception? Let us know in your RSVP and we can potentially make it happen! (We reserve the right to say no)
+                We will have an open bar at ESP Hifi for the duration of our reception. Please be responsible.
               </p>
             </div>
           </div>
