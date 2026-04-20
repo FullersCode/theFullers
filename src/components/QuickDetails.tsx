@@ -86,8 +86,8 @@ const QuickDetails = () => {
 
   const TileInner = ({ detail }: { detail: typeof details[number] }) => (
     <>
-      <div className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-pale-yellow rounded-full mb-4">
-        <detail.icon className="w-6 h-6 md:w-8 md:h-8 text-black" />
+      <div className="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-pale-yellow rounded-full mb-4">
+        <detail.icon className="w-5 h-5 md:w-6 md:h-6 text-black" />
       </div>
       <h3 className="text-lg font-semibold text-black mb-2">{detail.title}</h3>
       <p className="text-black">{detail.info}</p>
@@ -116,7 +116,7 @@ const QuickDetails = () => {
                     onClick={() => setShowCalendarMenu(!showCalendarMenu)}
                   >
                     <TileInner detail={detail} />
-                    <p className="text-xs text-sage-green mt-2 font-medium">+ Add to calendar</p>
+                    <span className="inline-block mt-3 px-3 py-1 rounded-full bg-sage-green text-white text-xs font-semibold shadow-sm">+ Add to calendar</span>
                   </div>
                   {showCalendarMenu && (
                     <div className="absolute z-10 top-full mt-2 left-0 right-0 bg-white border border-pale-yellow rounded-xl shadow-xl overflow-hidden">
@@ -149,7 +149,7 @@ const QuickDetails = () => {
                   className={clickableTile + ' block'}
                 >
                   <TileInner detail={detail} />
-                  <p className="text-xs text-sage-green mt-2 font-medium">View FAQ →</p>
+                  <span className="inline-block mt-3 px-3 py-1 rounded-full bg-sage-green text-white text-xs font-semibold shadow-sm">View FAQ →</span>
                 </Link>
               );
             }
@@ -164,7 +164,7 @@ const QuickDetails = () => {
                   className={clickableTile + ' block'}
                 >
                   <TileInner detail={detail} />
-                  <p className="text-xs text-sage-green mt-2 font-medium">Get directions →</p>
+                  <span className="inline-block mt-3 px-3 py-1 rounded-full bg-sage-green text-white text-xs font-semibold shadow-sm">Get directions →</span>
                 </a>
               );
             }

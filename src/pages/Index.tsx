@@ -28,7 +28,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/rsvp"
-              className="bg-pale-yellow border border-black text-black hover:bg-white px-8 py-3 rounded-full font-medium transition-colors duration-200 hover:scale-105 transform"
+              className="self-center sm:self-auto bg-white border border-black text-black hover:bg-pale-yellow px-5 py-2 sm:px-8 sm:py-3 text-sm sm:text-base rounded-full font-medium transition-colors duration-200 hover:scale-105 transform"
             >
               RSVP Now
             </Link>

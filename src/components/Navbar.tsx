@@ -45,16 +45,18 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`text-sm font-medium transition-colors duration-200 relative ${
+                  className={`text-sm font-medium transition-colors duration-200 relative group ${
                     isActive(item.path)
                       ? 'text-black'
                       : 'text-black hover:text-black'
                   }`}
                 >
                   {item.name}
-                  {isActive(item.path) && (
-                    <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-pale-blue rounded-full" />
-                  )}
+                  <span
+                    className={`absolute -bottom-1 left-0 h-0.5 bg-pale-blue rounded-full transition-all duration-200 ${
+                      isActive(item.path) ? 'w-full' : 'w-0 group-hover:w-full'
+                    }`}
+                  />
                 </Link>
               )
             )}
