@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import { MapPin, Clock, Car, UtensilsCrossed, Music, Calendar, Heart, Wine, Sparkles } from 'lucide-react';
+import { MapPin, Clock, Car, UtensilsCrossed, Music, Calendar, Heart, Wine } from 'lucide-react';
 
 const Details = () => {
   return (
@@ -59,17 +59,10 @@ const Details = () => {
                 },
                 {
                   icon: Music,
-                  title: 'Speeches & Dances',
-                  time: '6:00 PM – 7:00 PM',
-                  description: 'We will share some speeches and a few dances!',
+                  title: 'Reception',
+                  time: '6:00 PM – 8:00 PM',
+                  description: 'Enjoy some dancing, speeches, food and drink!',
                   headerClass: 'bg-sky-100',
-                },
-                {
-                  icon: Sparkles,
-                  title: 'Enjoy the Party!',
-                  time: '7:00 PM – 8:00 PM',
-                  description: 'Dance and enjoy drinks and food!',
-                  headerClass: 'bg-rose-100',
                 },
               ].map((item, index) => (
                 <div key={index} className="relative">
@@ -224,7 +217,7 @@ const Details = () => {
               <div>
                 <h3 className="text-xl font-semibold text-black mb-3">Parking at ESP Hifi</h3>
                 <p className="text-black">
-                  Parking at ESP Hifi is all street parking, with the exception of a small lot close to the venue reserved for handicap parking or those who are elderly.
+                  Parking at ESP Hifi is all street parking with the exception of a small lot close to the venue reserved for those who need it.
                 </p>
               </div>
             </div>
