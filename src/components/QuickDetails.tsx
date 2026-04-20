@@ -65,7 +65,7 @@ const QuickDetails = () => {
     {
       icon: Users,
       title: 'Dress Code',
-      info: 'Formal (Tie optional)',
+      info: 'Semi Formal/Formal',
       to: '/faq#dress-code',
     },
     {
