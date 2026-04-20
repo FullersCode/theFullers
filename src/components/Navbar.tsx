@@ -54,7 +54,7 @@ const Navbar = () => {
                 >
                   {item.name}
                   <span
-                    className={`absolute -bottom-1 left-0 h-0.5 bg-pale-blue rounded-full transition-all duration-200 ${
+                    className={`absolute -bottom-1 left-0 h-0.5 bg-black rounded-full transition-all duration-200 ${
                       isActive(item.path) ? 'w-full' : 'w-0 group-hover:w-full'
                     }`}
                   />
