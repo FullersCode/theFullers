@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import { MapPin, Clock, Car, Hotel, UtensilsCrossed, Music, Calendar, Heart, Wine, Sparkles } from 'lucide-react';
+import { MapPin, Clock, Car, UtensilsCrossed, Music, Calendar, Heart, Wine, Sparkles } from 'lucide-react';
 
 const Details = () => {
   return (
@@ -40,7 +40,7 @@ const Details = () => {
                   icon: Heart,
                   title: 'Ceremony',
                   time: '2:00 PM – 3:00 PM',
-                  description: 'We will be getting married at the "Romantic Gardens" at the Denver Botanic Gardens. We assume the ceremony will take 30 minutes with 30 minutes to take photos.',
+                  description: 'We will be getting married at the "Romantic Gardens" at the Denver Botanic Gardens. The ceremony will take 30 minutes and will have time for photos after.',
                   headerClass: 'bg-violet-100',
                 },
                 {
@@ -116,8 +116,8 @@ const Details = () => {
               </div>
               <div className="h-56 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=600&fit=crop&crop=center"
-                  alt="Denver Botanic Gardens"
+                  src="https://www.botanicgardens.org/sites/default/files/image/2020-05/romanticgarden1.jpg"
+                  alt="Romantic Gardens at Denver Botanic Gardens"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -158,7 +158,7 @@ const Details = () => {
               </div>
               <div className="h-56 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&h=600&fit=crop&crop=center"
+                  src="https://www.tracksandtales.co/cdn/shop/articles/Copy_of_Phill_Argent_-_10.9.1.HG_4_fb808094-bdec-4609-8872-dc2bd408bb59.png?v=1773828648&width=1100"
                   alt="ESP Hifi Denver"
                   className="w-full h-full object-cover"
                 />
@@ -190,118 +190,6 @@ const Details = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                   </svg>
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Accommodations */}
-      <div className="py-16 bg-pale-yellow">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif text-black mb-4">
-              Hotel Recommendations
-            </h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Hotel 1 - Halcyon Hotel Cherry Creek */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-pale-yellow">
-              <div className="h-48 overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=500&h=300&fit=crop&crop=center"
-                  alt="Halcyon Hotel Cherry Creek"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-4 sm:p-6 flex flex-col">
-                <div className="flex items-center mb-4">
-                  <Hotel className="w-5 h-5 text-[#7BA7BC] mr-2" />
-                  <h3 className="text-xl font-semibold text-black">Halcyon Hotel Cherry Creek</h3>
-                </div>
-                <div className="flex-grow">
-                  <p className="text-black text-sm">
-                    A stylish boutique hotel in the Cherry Creek neighborhood, just a short walk from Denver Botanic Gardens. One of the closest hotels to the ceremony venue.
-                  </p>
-                </div>
-                <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-4 gap-3">
-                  <span className="text-black font-medium text-lg">~$300/night</span>
-                  <a
-                    href="https://www.halcyonhotelcherrycreek.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="self-start sm:self-auto text-xs sm:text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-5 py-2.5 sm:px-4 sm:py-2 rounded-full transition-colors text-center"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Hotel 2 - Hampton Inn Cherry Creek */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-pale-yellow">
-              <div className="h-48 overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=500&h=300&fit=crop&crop=center"
-                  alt="Hampton Inn & Suites Denver Cherry Creek"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-4 sm:p-6 flex flex-col">
-                <div className="flex items-center mb-4">
-                  <Hotel className="w-5 h-5 text-[#7BA7BC] mr-2" />
-                  <h3 className="text-xl font-semibold text-black">Hampton Inn & Suites Cherry Creek</h3>
-                </div>
-                <div className="flex-grow">
-                  <p className="text-black text-sm">
-                    A comfortable and affordable option in the Cherry Creek area, close to Denver Botanic Gardens. Great value with all the essentials covered.
-                  </p>
-                </div>
-                <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-4 gap-3">
-                  <span className="text-black font-medium text-lg">~$160/night</span>
-                  <a
-                    href="https://www.hilton.com/en/hotels/denechx-hampton-suites-denver-cherry-creek/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="self-start sm:self-auto text-xs sm:text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-5 py-2.5 sm:px-4 sm:py-2 rounded-full transition-colors text-center"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Hotel 3 - The Brown Palace */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-pale-yellow">
-              <div className="h-48 overflow-hidden">
-                <img
-                  src="https://marriott.cdn.tambourine.com/the-brown-palace-hotel-and-spa/media/intro-68f6825d00edc.jpg"
-                  alt="The Brown Palace Hotel Denver"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-4 sm:p-6 flex flex-col">
-                <div className="flex items-center mb-4">
-                  <Hotel className="w-5 h-5 text-[#7BA7BC] mr-2" />
-                  <h3 className="text-xl font-semibold text-black">The Brown Palace Hotel</h3>
-                </div>
-                <div className="flex-grow">
-                  <p className="text-black text-sm">
-                    Denver's iconic historic landmark hotel in downtown, about 15 minutes from the venue. A great option if you want to experience classic Denver charm.
-                  </p>
-                </div>
-                <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-4 gap-3">
-                  <span className="text-black font-medium text-lg">~$280/night</span>
-                  <a
-                    href="https://www.brownpalace.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="self-start sm:self-auto text-xs sm:text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-5 py-2.5 sm:px-4 sm:py-2 rounded-full transition-colors text-center"
-                  >
-                    Book Now
-                  </a>
-                </div>
               </div>
             </div>
           </div>
@@ -349,7 +237,7 @@ const Details = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif text-black mb-4">
-              Additional Information
+              Food and Drink Information
             </h2>
           </div>
           

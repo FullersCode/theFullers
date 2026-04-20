@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import { Heart, ExternalLink, PawPrint, GraduationCap, FlaskConical } from 'lucide-react';
 
@@ -6,6 +6,16 @@ const VENMO_URL = 'https://venmo.com/u/LinZi-Fuller';
 const QR_URL = `https://api.qrserver.com/v1/create-qr-code/?size=320x320&data=${encodeURIComponent(VENMO_URL)}`;
 
 const Registry = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://tally.so/widgets/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -76,6 +86,28 @@ const Registry = () => {
             </a>
             <p className="mt-4 text-sm text-black/70">@LinZi-Fuller</p>
           </div>
+        </div>
+      </div>
+
+      {/* Personalized Message Form */}
+      <div className="pb-24">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-serif text-black mb-3">
+              Leave us a message
+            </h2>
+            <p className="text-black">
+              We'd love to hear from you — share a note, well-wish, or memory below.
+            </p>
+          </div>
+          <iframe
+            data-tally-src="https://tally.so/embed/68QzWB?transparentBackground=1&dynamicHeight=1"
+            loading="lazy"
+            width="100%"
+            height="500"
+            frameBorder="0"
+            title="Leave a message"
+          />
         </div>
       </div>
     </div>

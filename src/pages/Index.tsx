@@ -19,13 +19,9 @@ const Index = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-serif mb-6 text-black">
             {/* CUSTOMIZE: Replace with your CTA heading */}
-            We Can't Wait to Celebrate With You!
+            We hope to see you there!
           </h2>
-          <p className="text-xl mb-8 text-black">
-            {/* CUSTOMIZE: Replace with your CTA text */}
-            Join us for an unforgettable day filled with love, laughter, and happily ever after.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <Link
               to="/rsvp"
               className="self-center sm:self-auto bg-white border border-black text-black hover:bg-pale-yellow px-5 py-2 sm:px-8 sm:py-3 text-sm sm:text-base rounded-full font-medium transition-colors duration-200 hover:scale-105 transform"

@@ -1,9 +1,19 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import { Shirt, MapPin, Car, Camera, Phone, Users } from 'lucide-react';
+import { Shirt, MapPin, Car, Camera, Phone, Users, Trees } from 'lucide-react';
 
 const faqs = [
+  {
+    id: 'botanic-gardens',
+    icon: Trees,
+    question: 'Botanic Gardens',
+    answer: (
+      <p>
+        Guests will have access to the Botanic Gardens all day so take advantage and walk around!
+      </p>
+    ),
+  },
   {
     id: 'dress-code',
     icon: Shirt,
