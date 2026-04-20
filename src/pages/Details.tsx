@@ -231,7 +231,7 @@ const Details = () => {
                     href="https://www.halcyonhotelcherrycreek.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs sm:text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-3 py-1 sm:px-4 sm:py-2 rounded-full transition-colors text-center"
+                    className="self-start sm:self-auto text-xs sm:text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-5 py-2.5 sm:px-4 sm:py-2 rounded-full transition-colors text-center"
                   >
                     Book Now
                   </a>
@@ -264,7 +264,7 @@ const Details = () => {
                     href="https://www.hilton.com/en/hotels/denechx-hampton-suites-denver-cherry-creek/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs sm:text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-3 py-1 sm:px-4 sm:py-2 rounded-full transition-colors text-center"
+                    className="self-start sm:self-auto text-xs sm:text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-5 py-2.5 sm:px-4 sm:py-2 rounded-full transition-colors text-center"
                   >
                     Book Now
                   </a>
@@ -297,7 +297,7 @@ const Details = () => {
                     href="https://www.brownpalace.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs sm:text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-3 py-1 sm:px-4 sm:py-2 rounded-full transition-colors text-center"
+                    className="self-start sm:self-auto text-xs sm:text-sm bg-pale-yellow hover:bg-white border border-pale-yellow text-black px-5 py-2.5 sm:px-4 sm:py-2 rounded-full transition-colors text-center"
                   >
                     Book Now
                   </a>
