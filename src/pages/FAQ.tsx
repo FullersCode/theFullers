@@ -41,9 +41,10 @@ const faqs = [
     icon: Car,
     question: 'Is there parking available?',
     answer: (
-      <p>
-        Parking is available near Denver Botanic Gardens. We recommend arriving early to allow time to find a spot. Rideshare (Uber/Lyft) is also a great option for the evening!
-      </p>
+      <>
+        <p className="mb-3">Parking is available near Denver Botanic Gardens. We recommend arriving early to allow time to find a spot. Rideshare (Uber/Lyft) is also a great option for the evening!</p>
+        <p>Parking at ESP Hifi is all street parking with the exception of a small lot close to the venue reserved for those who need it.</p>
+      </>
     ),
   },
   {

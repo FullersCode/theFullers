@@ -28,6 +28,10 @@ const Gallery = () => {
     { id: 10, src: '/theFullers/images/IMG_1371.jpg',           alt: 'Evening out in Copenhagen',             width: 1200, height: 900  },
     { id: 11, src: '/theFullers/images/IMG_1632.jpg',           alt: 'Mirror selfie together',                width: 1200, height: 1200 },
     { id: 12, src: '/theFullers/images/IMG_9935.jpg',           alt: 'Mountain lake selfie',                  width: 1200, height: 900  },
+    { id: 13, src: '/theFullers/images/eng.jpg',                alt: 'Engagement photo together',             width: 1200, height: 1200 },
+    { id: 14, src: '/theFullers/images/ele.jpg',                alt: 'Meeting an elephant',                   width: 1200, height: 1200 },
+    { id: 15, src: '/theFullers/images/crab.jpg',               alt: 'Holding a crab',                        width: 1200, height: 1200 },
+    { id: 16, src: '/theFullers/images/image0.jpg',             alt: 'Favorite moment together',              width: 1200, height: 1200 },
   ]);
 
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
