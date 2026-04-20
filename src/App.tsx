@@ -9,6 +9,7 @@ import Details from "./pages/Details";
 import Gallery from "./pages/Gallery";
 import FAQ from "./pages/FAQ";
 import RSVP from "./pages/RSVP";
+import Registry from "./pages/Registry";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/rsvp" element={<RSVP />} />
+          <Route path="/registry" element={<Registry />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

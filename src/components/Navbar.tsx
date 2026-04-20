@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: 'Wedding Details', path: '/details' },
     { name: 'Photo Gallery', path: '/gallery' },
     { name: 'FAQ', path: '/faq' },
+    { name: 'Registry', path: '/registry' },
     { name: 'RSVP', path: '/rsvp' },
   ];
 
